@@ -1,15 +1,12 @@
-import React from 'react'
-import Footer from '../../Componentes/Footer/footer';
-import Navbar from '../../Componentes/Navbar/navbar';
+import React from "react";
+import Footer from "../../Componentes/Footer/footer";
+import Navbar from "../../Componentes/Navbar/navbar";
 
 const ConteactUs = () => {
-
-    console.log('ContactUs page rendered');
-    
   return (
     <>
-    <Navbar/>
-      
+      <Navbar />
+
       <section className="bg-gray-50 py-12">
         <div className="max-w-5xl mx-auto px-4">
           {/* Heading */}
@@ -69,7 +66,6 @@ const ConteactUs = () => {
               </form>
             </div>
 
-            {/* Contact Info Section */}
             <div className="flex flex-col justify-center space-y-6">
               <div>
                 <h2 className="text-xl font-semibold text-gray-800">
@@ -81,9 +77,7 @@ const ConteactUs = () => {
               </div>
 
               <div>
-                <h2 className="text-xl font-semibold text-gray-800">
-                  Call Us
-                </h2>
+                <h2 className="text-xl font-semibold text-gray-800">Call Us</h2>
                 <p className="text-gray-600 mt-2">+92 300 1234567</p>
               </div>
 
@@ -97,9 +91,9 @@ const ConteactUs = () => {
           </div>
         </div>
       </section>
-        <Footer />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default ConteactUs
+export default ConteactUs;

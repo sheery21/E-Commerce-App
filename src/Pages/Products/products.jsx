@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../Componentes/Navbar/navbar";
 import Footer from "../../Componentes/Footer/footer";
 import axios from "axios";
-import SliderPage from "../../Componentes/Slider/sliderPage";
 import { Link } from "react-router-dom";
 
 const Produts = () => {
@@ -15,14 +14,11 @@ const Produts = () => {
   const fetchData = async () => {
     try {
       const res = await axios.get("https://fakestoreapi.com/products");
-
       setproducts(res.data);
     } catch (error) {
       console.log("error", error.massag);
     }
   };
-
-  console.log("products", products);
 
   return (
     <>
@@ -62,11 +58,10 @@ const Produts = () => {
                   <button
                     key={obj.id}
                     className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
-                    >
+                  >
                     Add to Cart
                   </button>
-                    </Link>
-                
+                </Link>
               </div>
             </div>
           );
