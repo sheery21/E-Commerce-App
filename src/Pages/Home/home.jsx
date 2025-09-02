@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../../Componentes/Navbar/navbar';
 import Footer from '../../Componentes/Footer/footer';
 import SliderPage from '../../Componentes/Slider/sliderPage';
-import Produts from '../Products/products';
 
 const Home = () => {
 console.log('Home page rendered');
@@ -11,7 +10,9 @@ console.log('Home page rendered');
   return (
     <>
       <Navbar />
+      <div className='mt-6"'>
       <SliderPage />
+      </div>
       <section className="p-10 bg-gray-100">
         <h2 className="text-3xl font-bold text-center mb-6">
           Welcome to Our Store
